@@ -1,4 +1,12 @@
 name,description,col_type,sort_order,database,cluster,schema,table_name
+age,"Customer's age","int",1,ternfs,gold,feature_group,demographics
+job,"Type of job (categorical: 'admin.', 'services', ...)","string",2,ternfs,gold,feature_group,demographics
+marital,"Marital status (categorical: 'married', 'single', ...)","string",3,ternfs,gold,feature_group,demographics
+education,"Level of education (categorical: 'basic.4y', 'high.school', ...)","string",4,ternfs,gold,feature_group,demographics
+campaign,"Number of contacts performed during this campaign and for this client (numeric, includes last contact)","int",1,ternfs,gold,feature_group,"campaign_info"
+pdays,"Number of days that passed by after the client was last contacted from a previous campaign","int",1,ternfs,gold,feature_group,"campaign_info"
+previous,"Number of contacts performed before this campaign and for this client","int",1,ternfs,gold,feature_group,"campaign_info"
+poutcome,"Outcome of the previous marketing campaign (categorical: 'nonexistent','success', ...)","int",1,ternfs,gold,feature_group,"campaign_info"
 col1,"col1 description","string",1,hive,gold,test_schema,test_table1
 col2,"col2 description","string",2,hive,gold,test_schema,test_table1
 col3,"col3 description","string",3,hive,gold,test_schema,test_table1

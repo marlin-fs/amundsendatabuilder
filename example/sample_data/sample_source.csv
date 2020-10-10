@@ -1,2 +1,3 @@
 db_name,cluster,schema,table_name,source,source_type
+ternfs,gold,feature_group,demographics,"https://github.com/amundsen-io/amundsen/",github
 hive,gold,test_schema,test_table1,"https://github.com/amundsen-io/amundsen/",github

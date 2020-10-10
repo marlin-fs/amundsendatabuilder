@@ -1,2 +1,3 @@
 schema_key,schema,description
+ternfs://gold.feature_group,feature_group,"feature group schema description"
 hive://gold.test_schema,test_schema,"test schema description"

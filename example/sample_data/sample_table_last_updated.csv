@@ -1,3 +1,4 @@
 cluster,db,schema,table_name,last_updated_time_epoch
+gold,ternfs,feature_group,demographics,1588204800
 gold,hive,test_schema,test_table1,1570230473
 gold,dynamo,test_schema,test_table2,1070230473

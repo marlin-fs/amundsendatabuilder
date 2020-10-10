@@ -1,4 +1,14 @@
 database,cluster,schema,name,description,tags,description_source
+ternfs,gold,feature_group,demographics,"**Size**: 2.3GB
+
+**Monthly Cost**: $32","cheap","s3_crawler"
+ternfs,gold,feature_group,demographics,"### Quality Report:
+---
+Pass all data quality tests.
+---
+[![Build Status](https://api.travis-ci.com/amundsen-io/amundsendatabuilder.svg?branch=master)](https://travis-ci.com/amundsen-io/amundsendatabuilder)","low_quality","quality_service"
+
+
 hive,gold,test_schema,test_table1,"**Size**: 50T
 
 **Monthly Cost**: $5000","expensive","s3_crawler"

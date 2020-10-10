@@ -1,4 +1,13 @@
 cluster,db,schema,table_name,col_name,stat_name,stat_val,start_epoch,end_epoch
+gold,ternfs,feature_group,demographics,age,"count","41188",1432300762,1562300762
+gold,ternfs,feature_group,demographics,age,"distinct values","38",1432300762,1562300762
+gold,ternfs,feature_group,demographics,age,"min","17",1432300762,1562300762
+gold,ternfs,feature_group,demographics,age,"max","98",1432300762,1562300762
+gold,ternfs,feature_group,demographics,age,"mean","40.02",1432300762,1562300762
+gold,ternfs,feature_group,demographics,age,"std","10.42",1432300762,1562300762
+gold,ternfs,feature_group,demographics,age,"25%","32",1432300762,1562300762
+gold,ternfs,feature_group,demographics,age,"50%","38",1432300762,1562300762
+gold,ternfs,feature_group,demographics,age,"75%","47",1432300762,1562300762
 gold,hive,test_schema,test_table1,col1,"distinct values","8",1432300762,1562300762
 gold,hive,test_schema,test_table1,col1,"min","""aardvark""",1432300762,1562300762
 gold,hive,test_schema,test_table1,col1,"max","""zebra""",1432300762,1562300762
