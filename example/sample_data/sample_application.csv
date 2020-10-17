@@ -1,3 +1,5 @@
 task_id,dag_id,exec_date,application_url_template,db_name,schema,table_name,cluster
-ternfs.feature_group.demographics,event_test,"2018-05-31T00:00:00","https://airflow_host.net/admin/airflow/tree?dag_id={dag_id}",ternfs,feature_group,demographics,gold
-hive.test_schema.test_table1,event_test,"2018-05-31T00:00:00","https://airflow_host.net/admin/airflow/tree?dag_id={dag_id}",hive,test_schema,test_table1,gold
+snowflake.feature_group.demographics,event_test,"2020-05-31T00:00:00","https://airflow_host.net/admin/airflow/tree?dag_id={dag_id}",snowflake,feature_group,demographics,gold
+snowflake.feature_group.campaign_info,event_test,"2020-05-31T00:00:00","https://airflow_host.net/admin/airflow/tree?dag_id={dag_id}",snowflake,feature_group,campaign_info,gold
+snowflake.feature_group.mktg_model_v1,event_test,"2020-05-31T00:00:00","https://airflow_host.net/admin/airflow/tree?dag_id={dag_id}",snowflake,feature_group,mktg_model_v1,gold
+

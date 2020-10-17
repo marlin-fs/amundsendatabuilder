@@ -1,4 +1,5 @@
 product,cluster,dashboard_group_id,dashboard_id,table_ids
-tern,gold,feature_group_id_1,feature_test_dashboard_id_1,"ternfs://gold.feature_group/demographics"
-mode,gold,test_group_id_1,test_dashboard_id_1,"hive://gold.test_schema/test_table1"
-mode,gold,test_group_id_2,test_dashboard_id_2,"hive://gold.test_schema/test_view1,hive://gold.test_schema/test_table3"
+tern,gold,feature_group_id_1,feature_test_dashboard_id_1,"snowflake://gold.feature_group/demographics"
+tern,gold,feature_group_id_2,feature_test_dashboard_id_2,"snowflake://gold.feature_group/campaign_info"
+tern,gold,feature_group_id_3,feature_test_dashboard_id_3,"snowflake://gold.feature_group/mktg_model_v1"
+

@@ -1,20 +1,67 @@
 name,description,col_type,sort_order,database,cluster,schema,table_name
-age,"Customer's age","int",1,ternfs,gold,feature_group,demographics
-job,"Type of job (categorical: 'admin.', 'services', ...)","string",2,ternfs,gold,feature_group,demographics
-marital,"Marital status (categorical: 'married', 'single', ...)","string",3,ternfs,gold,feature_group,demographics
-education,"Level of education (categorical: 'basic.4y', 'high.school', ...)","string",4,ternfs,gold,feature_group,demographics
-campaign,"Number of contacts performed during this campaign and for this client (numeric, includes last contact)","int",1,ternfs,gold,feature_group,"campaign_info"
-pdays,"Number of days that passed by after the client was last contacted from a previous campaign","int",1,ternfs,gold,feature_group,"campaign_info"
-previous,"Number of contacts performed before this campaign and for this client","int",1,ternfs,gold,feature_group,"campaign_info"
-poutcome,"Outcome of the previous marketing campaign (categorical: 'nonexistent','success', ...)","int",1,ternfs,gold,feature_group,"campaign_info"
-col1,"col1 description","string",1,hive,gold,test_schema,test_table1
-col2,"col2 description","string",2,hive,gold,test_schema,test_table1
-col3,"col3 description","string",3,hive,gold,test_schema,test_table1
-col4,"col4 description","string",4,hive,gold,test_schema,test_table1
-col5,"col5 description","float",5,hive,gold,test_schema,test_table1
-col1,"col1 description","string",1,dynamo,gold,test_schema,test_table2
-col2,"col2 description","string",2,dynamo,gold,test_schema,test_table2
-col3,"col3 description","string",3,dynamo,gold,test_schema,test_table2
-col4,"col4 description","int",4,dynamo,gold,test_schema,test_table2
-col1,"view col description","int",1,hive,gold,test_schema,test_view1
-col1,"col1 description","int",1,hive,gold,test_schema,test_table3
+age,"Customer's age","int",1,snowflake,gold,feature_group,demographics
+job,"Type of job (categorical: 'admin.', 'services', ...)","string",2,snowflake,gold,feature_group,demographics
+marital,"Marital status (categorical: 'married', 'single', ...)","string",3,snowflake,gold,feature_group,demographics
+education,"Level of education (categorical: 'basic.4y', 'high.school', ...)","string",4,snowflake,gold,feature_group,demographics
+campaign,"Number of contacts performed during this campaign and for this client (numeric, includes last contact)","int",1,snowflake,gold,feature_group,campaign_info
+pdays,"Number of days that passed by after the client was last contacted from a previous campaign","int",1,snowflake,gold,feature_group,campaign_info
+previous,"Number of contacts performed before this campaign and for this client","int",1,snowflake,gold,feature_group,campaign_info
+poutcome,"Outcome of the previous marketing campaign (categorical: 'nonexistent','success', ...)","int",1,snowflake,gold,feature_group,campaign_info
+campaign_info.campaign,"Number of contacts performed during this campaign and for this client (numeric, includes last contact)","int",1,snowflake,gold,feature_group,mktg_model_v1
+campaign_info.pdays,"Number of days that passed by after the client was last contacted from a previous campaign","int",1,snowflake,gold,feature_group,mktg_model_v1
+campaign_info.previous,"Number of contacts performed before this campaign and for this client","int",1,snowflake,gold,feature_group,mktg_model_v1
+campaign_info.poutcome_failure,"Outcome of the previous marketing campaign (categorical: 'nonexistent','success', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+campaign_info.poutcome_nonexistent,"Outcome of the previous marketing campaign (categorical: 'nonexistent','success', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+campaign_info.poutcome_success,"Outcome of the previous marketing campaign (categorical: 'nonexistent','success', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+demographics.age_job_admin,"Customer's age","int",1,snowflake,gold,feature_group,mktg_model_v1
+demographics.job_blue-collar,"Type of job (categorical: 'admin.', 'services', ...)","int",2,snowflake,gold,feature_group,mktg_model_v1
+demographics.job_job_entrepreneur,"Type of job (categorical: 'admin.', 'services', ...)","int",2,snowflake,gold,feature_group,mktg_model_v1
+demographics.job_housemaid,"Type of job (categorical: 'admin.', 'services', ...)","int",2,snowflake,gold,feature_group,mktg_model_v1
+demographics.job_management,"Type of job (categorical: 'admin.', 'services', ...)","int",2,snowflake,gold,feature_group,mktg_model_v1
+demographics.job_retired,"Type of job (categorical: 'admin.', 'services', ...)","int",2,snowflake,gold,feature_group,mktg_model_v1
+demographics.job_self-employed,"Type of job (categorical: 'admin.', 'services', ...)","int",2,snowflake,gold,feature_group,mktg_model_v1
+demographics.job_services,"Type of job (categorical: 'admin.', 'services', ...)","int",2,snowflake,gold,feature_group,mktg_model_v1
+demographics.job_student,"Type of job (categorical: 'admin.', 'services', ...)","int",2,snowflake,gold,feature_group,mktg_model_v1
+demographics.job_technician,"Type of job (categorical: 'admin.', 'services', ...)","int",2,snowflake,gold,feature_group,mktg_model_v1
+demographics.job_unemployed,"Type of job (categorical: 'admin.', 'services', ...)","int",2,snowflake,gold,feature_group,mktg_model_v1
+demographics.job_unknown,"Type of job (categorical: 'admin.', 'services', ...)","int",2,snowflake,gold,feature_group,mktg_model_v1
+demographics.marital_divorced,"Marital status (categorical: 'married', 'single', ...)","int",3,snowflake,gold,feature_group,mktg_model_v1
+demographics.marital_married,"Marital status (categorical: 'married', 'single', ...)","int",3,snowflake,gold,feature_group,mktg_model_v1
+demographics.marital_single,"Marital status (categorical: 'married', 'single', ...)","int",3,snowflake,gold,feature_group,mktg_model_v1
+demographics.marital_unknown,"Marital status (categorical: 'married', 'single', ...)","int",3,snowflake,gold,feature_group,mktg_model_v1
+demographics.education_basic.4y,"Level of education (categorical: 'basic.4y', 'high.school', ...)","int",4,snowflake,gold,feature_group,mktg_model_v1
+demographics.education_basic.6y,"Level of education (categorical: 'basic.4y', 'high.school', ...)","int",4,snowflake,gold,feature_group,mktg_model_v1
+demographics.education_basic.9y,"Level of education (categorical: 'basic.4y', 'high.school', ...)","int",4,snowflake,gold,feature_group,mktg_model_v1
+demographics.education_high.school,"Level of education (categorical: 'basic.4y', 'high.school', ...)","int",4,snowflake,gold,feature_group,mktg_model_v1
+demographics.education_illiterate,"Level of education (categorical: 'basic.4y', 'high.school', ...)","int",4,snowflake,gold,feature_group,mktg_model_v1
+demographics.education_professional.course,"Level of education (categorical: 'basic.4y', 'high.school', ...)","int",4,snowflake,gold,feature_group,mktg_model_v1
+demographics.education_university.degree,"Level of education (categorical: 'basic.4y', 'high.school', ...)","int",4,snowflake,gold,feature_group,mktg_model_v1
+demographics.education_unknown,"Level of education (categorical: 'basic.4y', 'high.school', ...)","int",4,snowflake,gold,feature_group,mktg_model_v1
+no_previous_contact,"No previous contact if yes then 1 else 0","int",1,snowflake,gold,feature_group,mktg_model_v1
+not_working,"Currentlt working and employed, if yes then 1 else 0","int",1,snowflake,gold,feature_group,mktg_model_v1
+default_no,"Has credit in default? (categorical: 'no', 'unknown', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+default_unknown,"Has credit in default? (categorical: 'no', 'unknown', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+default_yes,"Has credit in default? (categorical: 'no', 'unknown', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+housing_no,"Has housing loan? (categorical: 'no', 'yes', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+housing_unknown,"Has housing loan? (categorical: 'no', 'yes', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+housing_yes,"Has housing loan? (categorical: 'no', 'yes', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+loan_no,"Has personal loan? (categorical: 'no', 'yes', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+loan_unknown,"Has personal loan? (categorical: 'no', 'yes', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+loan_yes,"Has personal loan? (categorical: 'no', 'yes', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+contact_cellular,"Contact communication type (categorical: 'cellular', 'telephone', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+contact_telephone,"Contact communication type (categorical: 'cellular', 'telephone', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+month_apr,"Last contact month of year (categorical: 'may', 'nov', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+month_aug,"Last contact month of year (categorical: 'may', 'nov', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+month_dec,"Last contact month of year (categorical: 'may', 'nov', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+month_jul,"Last contact month of year (categorical: 'may', 'nov', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+month_jun,"Last contact month of year (categorical: 'may', 'nov', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+month_mar,"Last contact month of year (categorical: 'may', 'nov', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+month_may,"Last contact month of year (categorical: 'may', 'nov', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+month_nov,"Last contact month of year (categorical: 'may', 'nov', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+month_oct,"Last contact month of year (categorical: 'may', 'nov', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+month_sep,"Last contact month of year (categorical: 'may', 'nov', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+day_of_week_fri,"Last contact day of the week (categorical: 'mon', 'fri', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+day_of_week_mon,"Last contact day of the week (categorical: 'mon', 'fri', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+day_of_week_thu,"Last contact day of the week (categorical: 'mon', 'fri', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+day_of_week_tue,"Last contact day of the week (categorical: 'mon', 'fri', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1
+day_of_week_wed,"Last contact day of the week (categorical: 'mon', 'fri', ...)","int",1,snowflake,gold,feature_group,mktg_model_v1

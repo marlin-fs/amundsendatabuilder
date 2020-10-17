@@ -1,8 +1,5 @@
 database,cluster,schema,name,description,tags,is_view,description_source
-ternfs,gold,feature_group,demographics,"Customer demographic information such as age, marital status, education. This table is updated every 6 weeks and is source from a third-party data provider","demographic,individual-level,non-pii,high-quality",Experly,
-ternfs,gold,feature_group,campaign_info,"Campaign summary information, how often and when a customer has been contact and the outcome of contact. This table is updated every time a customer is contacted and when conversion is triggered.","campaign,customer-level,non-pii,high-quality","Exact Target",
-ternfs,gold,feature_group,mktg_model_v1,"Summary features for the marketing model v1, these features are being served online at customer_id and campaign id level","online-model-features,customer-level,non-pii,high-quality","Snowflake",
-hive,gold,test_schema,test_table1,"1st test table","tag1,tag2,pii,high_quality",false,
-dynamo,gold,test_schema,test_table2,"2nd test table","high_quality,recommended",false,
-hive,gold,test_schema,test_view1,"1st test view","tag1",true,
-hive,gold,test_schema,test_table3,"3rd test","needs_documentation",false,
+snowflake,gold,feature_group,demographics,"Customer demographic information such as age, marital status, education. This table is updated every 6 weeks and is source from a third-party data provider","demographic,individual-level,non-pii,high-quality",Experly,
+snowflake,gold,feature_group,campaign_info,"Campaign summary information, how often and when a customer has been contact and the outcome of contact. This table is updated every time a customer is contacted and when conversion is triggered.","campaign,customer-level,non-pii,high-quality","Exact Target",
+snowflake,gold,feature_group,mktg_model_v1,"Summary features for the marketing model v1, these features are being served online at customer_id and campaign id level","online-model-features,customer-level,non-pii,high-quality","Snowflake",
+

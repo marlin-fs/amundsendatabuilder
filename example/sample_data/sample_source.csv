@@ -1,3 +1,4 @@
 db_name,cluster,schema,table_name,source,source_type
-ternfs,gold,feature_group,demographics,"https://github.com/amundsen-io/amundsen/",github
-hive,gold,test_schema,test_table1,"https://github.com/amundsen-io/amundsen/",github
+snowflake,gold,feature_group,demographics,"https://github.com/amundsen-io/amundsen/",github
+snowflake,gold,feature_group,campaign_info,"https://github.com/amundsen-io/amundsen/",github
+snowflake,gold,feature_group,mktg_model_v1,"https://github.com/amundsen-io/amundsen/",github

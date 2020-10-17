@@ -1,4 +1,5 @@
 db_name,schema,cluster,table_name,owners
-ternfs,feature_group,gold,demographics,"nadc@tern.ai,chuck@tern.ai"
-hive,test_schema,gold,test_table1,"roald.amundsen@example.org,chrisc@example.org"
-dynamo,test_schema,gold,test_table2,
+snowflake,feature_group,gold,demographics,"nadc@tern.ai,chuck@tern.ai"
+snowflake,feature_group,gold,campaign_info,"nadc@tern.ai,chuck@tern.ai"
+snowflake,feature_group,gold,mktg_model_v1,"nadc@tern.ai,chuck@tern.ai"
+

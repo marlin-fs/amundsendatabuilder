@@ -1,4 +1,4 @@
 product,cluster,dashboard_group_id,dashboard_id,view_count,email
 tern,gold,feature_group_id_1,feature_test_dashboard_id_1,300,chuck@tern.ai
-mode,gold,test_group_id_1,test_dashboard_id_1,100,roald.amundsen@example.org
-mode,gold,test_group_id_2,test_dashboard_id_2,2000,chrisc@example.org
+tern,gold,feature_group_id_2,feature_test_dashboard_id_2,200,chuck@tern.ai
+tern,gold,feature_group_id_3,feature_test_dashboard_id_3,155,chuck@tern.ai
